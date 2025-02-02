@@ -629,3 +629,90 @@ nav ul li a{
     background-color: transparent;
     transform: scale(1.1);
 }
+
+/* Default styles for larger screens (already applied in your CSS) */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Make images responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust navbar */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        width: 100%;
+        background-color: #fff; /* Match your design */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px 0;
+    }
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .menu-icon {
+        display: none;
+    }
+
+    .navbar li {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reduce padding/margins */
+    .container-box {
+        padding: 10px;
+    }
+
+    /* Adjust title text */
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .title p {
+        font-size: 14px;
+    }
+
+    /* Make the donation button responsive */
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Make iframe (YouTube videos) responsive */
+    iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Adjust footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footlinks ul {
+        padding: 0;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
